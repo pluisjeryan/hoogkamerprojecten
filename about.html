@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="about.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>about</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".toggle").on("click", function () {
+          if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+          } else {
+            $(".item").addClass("active");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li class="logo">
+          <a href="default.html"
+            ><img src="hp projecten logo hp.png" alt="" class="hp"
+          /></a>
+        </li>
+        <li class="item"><a href="default.html">home</a></li>
+        <li class="item"><a href="about.html">about</a></li>
+        <li class="item">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe_4X-b6pF58HOqaCniB83KkoEiB4UpNMZUzM_Ag4vzBvx7Ng/viewform?usp=sf_link"
+            >contact formulier</a
+          >
+        </li>
+        <li class="toggle"><span class="bars"></span></li>
+      </ul>
+    </nav>
+    <div class="divabout">
+      <h1 class="about">about</h1>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    <div class="divbenik">
+      <h2 class="benik">Dit ben ik</h2>
+      <p class="elroy">h h h h h h h hh h h h h</p>
+    </div>
+  </body>
+</html>

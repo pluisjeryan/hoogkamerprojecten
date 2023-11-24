@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="menu.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Hoogkamer Projecten</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".toggle").on("click", function () {
+          if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+          } else {
+            $(".item").addClass("active");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li class="logo">
+          <a href="default.html"
+            ><img src="hp projecten logo hp.png" alt="" class="hp"
+          /></a>
+        </li>
+        <li class="item"><a href="default.html">home</a></li>
+        <li class="item"><a href="about.html">about</a></li>
+        <li class="item">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe_4X-b6pF58HOqaCniB83KkoEiB4UpNMZUzM_Ag4vzBvx7Ng/viewform?usp=sf_link"
+            >contact formulier</a
+          >
+        </li>
+        <li class="toggle"><span class="bars"></span></li>
+      </ul>
+    </nav>
+    <div class="naamen">
+      <h1 class="naam1">Hoogkamer</h1>
+      <h1 class="naam2">Projecten</h1>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    <br />
+    <h2 class="watdoen">Wat doe ik op zo'n dag</h2>
+    <p class="info">h a a a a a a a a a a a</p>
+    <p class="align">
+      <img src="tonzon-vloerisolatie.png" alt="" class="iso" />
+    </p>
+    <h3 class="infoimg">Dit is hoe het onder de grond aan toe gaat</h3>
+    <br />
+    <p>hjhjhjhjhhjhjhj</p>
+    <p class="test">onderkant</p>
+  </body>
+</html>

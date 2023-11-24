@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+nav {
+  background: #222;
+  padding: 5px 20px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+}
+.menu li a {
+  display: block;
+}
+
+.logo a {
+  font-size: 20px;
+}
+.hp {
+  width: 50px;
+}
+.about {
+  text-align: center;
+  padding-top: 180px;
+  background-color: black;
+  color: #385724;
+}
+.divabout {
+  background-color: black;
+}
+.benik {
+  padding-left: 20px;
+}
+.elroy {
+  padding-left: 10px;
+}
+.about {
+  font-size: 55px;
+}
+/*mobile*/
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle {
+  order: 1;
+}
+.toggle {
+  cursor: pointer;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.item.active {
+  display: block;
+}
+.bars {
+  background: #999;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  width: 18px;
+}
+
+.bars::before,
+.bars::after {
+  background: #999;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: absolute;
+  width: 18px;
+}
+.bars::before {
+  top: 5px;
+}
+.bars::after {
+  top: -5px;
+}
+
+@media all and (min-width: 768px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+  .toggle {
+    display: none;
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1;
+  }
+  .button {
+    order: 2;
+  }
+  .menu li {
+    pad: 15px 10px;
+  }
+  .menu li.button {
+    padding-right: 0;
+  }
+  .naam1 {
+    font-size: 75px;
+  }
+  .naam2 {
+    font-size: 70px;
+  }
+  .about {
+    font-size: 75px;
+  }
+}

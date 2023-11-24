@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+nav {
+  background: #222;
+  padding: 5px 20px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+}
+.menu li a {
+  display: block;
+}
+
+.logo a {
+  font-size: 20px;
+}
+.hp {
+  width: 50px;
+}
+.img {
+  height: 75px;
+  width: 50px;
+}
+.naam1 {
+  text-align: center;
+  padding-top: 100px;
+  background-color: black;
+  color: #385724;
+  font-size: 55px;
+}
+.naam2 {
+  text-align: center;
+  padding-top: 5px;
+  background-color: black;
+  color: #9b780f;
+  font-size: 50px;
+}
+.naamen {
+  background-color: black;
+}
+.test {
+  padding-top: 1000px;
+}
+.watdoen {
+  text-align: start;
+  padding-left: 20px;
+}
+.info {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.iso {
+  width: 341px;
+  height: 157.5px;
+  text-align: center;
+}
+.align {
+  text-align: center;
+}
+/*mobile*/
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle {
+  order: 1;
+}
+.toggle {
+  cursor: pointer;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.item.active {
+  display: block;
+}
+.bars {
+  background: #999;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  width: 18px;
+}
+
+.bars::before,
+.bars::after {
+  background: #999;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: absolute;
+  width: 18px;
+}
+.bars::before {
+  top: 5px;
+}
+.bars::after {
+  top: -5px;
+}
+
+@media all and (min-width: 768px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+  .toggle {
+    display: none;
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1;
+  }
+  .button {
+    order: 2;
+  }
+  .menu li {
+    pad: 15px 10px;
+  }
+  .menu li.button {
+    padding-right: 0;
+  }
+  .naam1 {
+    font-size: 75px;
+  }
+  .naam2 {
+    font-size: 70px;
+  }
+  .iso {
+    height: auto;
+    width: auto;
+  }
+  .align {
+    text-align: left;
+    padding-left: 10px;
+  }
+  .iso {
+    float: left;
+    padding-right: 10px;
+    border-color: #385724;
+  }
+}
